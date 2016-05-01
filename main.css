@@ -1,0 +1,308 @@
+
+body {
+	font-family: 'Lato', sans-serif;
+	color:#737373;
+	letter-spacing: 1px;
+	line-height: 2.5rem;
+}
+
+header {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+button.btn {
+	border-radius: 0;
+	background: #00D772;
+	color:white;
+	width:220px;
+
+}
+
+.centering {
+	text-align:center;
+}
+
+hr {
+	margin-bottom: 0;
+}
+div.header-img, header h2 {
+	float:left;
+}
+
+header h2{
+	margin-top: 12px;
+	margin-left: 20px;
+	font-size: 24px;
+}
+
+header ul {
+	margin: 0;
+	padding:7px 0 0 0;
+}
+
+nav.navbar {
+	margin-bottom: 5px;
+}
+
+header ul li {
+	display:inline;
+	padding-left: 5px;
+}
+
+header ul.nav li a {
+	color: #737373;
+}
+
+header ul.nav li a:hover {
+	color: #00D772;
+	background-color: rgba(0,0,0,.0);
+}
+header ul.nav li.active a{
+	color: #00D772;
+}
+
+header ul.nav li:hover {
+	color: #00D772;
+}
+
+svg {
+	fill:#dadada;
+}
+
+svg:hover {
+	fill: #00bbf5;
+}
+
+section.first{
+	background-image: url('images/green-sunburst.jpg');
+	background-size: cover;
+	background-position: center center;
+	padding-top:20px;
+}
+
+section.first img {
+	width:100%;
+	position:relative;
+	top:80px;
+}
+
+section.browse {
+	padding: 100px 20px 40px;
+	text-transform: uppercase
+}
+
+section.browse h3 {
+	margin-top: 40px;
+	margin-bottom:30px;
+	font-size:16px;
+	letter-spacing: 1px;
+	line-height: 2.7rem;
+}
+
+section.video {
+	padding: 30px 0;
+	background-color: #efefef;
+}
+
+section.video h2 {
+	margin-top: 0;
+	font-size: 24px;
+}
+
+section.video p {
+	font-size: 14px;
+	line-height: 2.5rem;
+	letter-spacing: 1px;
+}
+
+section.portfolio h2 {
+	font-size:24px;
+	margin: 50px 0 30px;
+}
+
+.port-gallery{
+	margin-top: 30px;
+}
+
+.port-img {
+	width: 390px;
+	max-width:390px;
+	background: rgba(255,255,255,.7);
+	position:relative;
+	text-align:center;
+}
+
+
+.port-img:after{
+	display:block;
+	content:url('images/link.png');
+	position:absolute;
+	z-index:2;
+	top:15%;
+	right:40%;
+	opacity:0;
+	transition:all.3s;
+
+}
+
+.port-img:hover:after{
+	opacity: 1;
+}
+
+
+
+
+.port-img img {
+	-webkit-filter: opacity(.4);
+  	filter: opacity(.4);
+  	transition: all.5s;
+  	width:90%;
+  	margin:0 auto;
+}
+
+
+
+
+.port-img.is-selected img {
+	-webkit-filter: opacity(1);
+  	filter: opacity(1);
+
+
+}
+
+
+
+.port-img .gallery-item-text {
+	opacity:0;
+	text-align:center;
+	padding:20px 0;
+
+}
+
+.gallery-item-text h3 {
+	font-size: 18px;
+}
+
+.port-img.is-selected .gallery-item-text {
+	opacity: 1;
+}
+
+
+.flickity-prev-next-button {
+	top: 280px;
+}
+
+.flickity-prev-next-button:hover .arrow {
+	fill: #00D772;
+
+}
+
+.flickity-prev-next-button.next {
+	right:15%;
+}
+
+.flickity-prev-next-button.previous {
+	left:15%;
+}
+
+
+
+
+
+
+
+
+
+.top-footer {
+	background:#332f2f;
+	color:white;
+	padding: 60px 0;
+}
+
+.top-footer h2 {
+	margin: 0;
+	font-size: 24px;
+}
+
+
+
+
+.bottom-footer ol.breadcrumb {
+	margin:0;
+	background-color: rgba(0,0,0,.0);
+	padding:0;
+}
+
+.bottom-footer ol li a, .bottom-footer p {
+	color: lightgrey;
+	margin:0;
+}
+
+
+.bottom-footer {
+	padding: 20px 0;
+}
+
+
+@media (max-width:992px){
+	.video img {
+		margin-bottom: 30px;
+	}
+	.video-text h2 {
+		text-align:center;
+	}
+
+	.top-footer h2 {
+		text-align:center;
+		margin: 0 auto 30px;
+	}
+	div.col-xs-12.col-md-3.text-right{
+		text-align:center;
+	}
+
+
+
+	.bottom-footer p{
+		text-align:center;
+		margin-bottom: 30px;
+
+	}
+
+	.bottom-footer ol.breadcrumb.text-right {
+		text-align:center;
+	}	
+}
+
+
+@media (max-width: 767px){
+	section.first img{
+		top:60px;
+	}
+
+	section.browse h3 {
+		margin-top: 0;
+	}
+
+	.social {
+		margin-top:30px;
+	}
+}
+
+
+@media(max-width:670px){
+	section.first img{
+		top:30px;
+	}
+
+}
+
+@media (max-width:500px){
+	.flickity-prev-next-button.next {
+	right:10px;
+}
+
+	.flickity-prev-next-button.previous {
+		left:10px;
+	}
+}
